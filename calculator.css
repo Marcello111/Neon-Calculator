@@ -1,0 +1,159 @@
+
+/* Universal styling */
+
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-60px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(194, 182, 182));
+}
+
+#page {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 10px auto;
+    font-size: 35px;
+}
+
+
+/* Header */
+
+
+/* Main */
+
+.calculator-wrapper {
+    max-width: 400px;
+    height: 75vh;
+	text-align: center;
+    animation: drop 1.5s ease;
+    border: 1px solid rgb(67,52,55);
+    border-top: 0px;
+    background-color: whitesmoke;
+    margin: 50px auto;
+    font-size: 30px;
+    border-spacing: 0rem; 
+}
+
+td {
+    width: 25%;  
+    border: 1px solid rgb(67,52,55);
+    padding: 15px;
+    font-size: smaller;
+    cursor: pointer;
+    border-spacing: 0px;
+}
+
+
+.operator  {
+    background-color: rgb(190, 209, 243);    
+}
+
+.number:hover  {
+    background-color: lightgrey;   
+}
+
+.number:active {
+    background: grey;
+}
+ 
+.operator:hover {
+    background-color: #255784;
+}
+
+.operator:active {
+    color: white;
+}
+
+/*Temporary result*/
+
+.temporary-result {
+    width: 100%;
+    background-color: rgb(67,52,55);
+    text-align: end;
+    color: white;
+    padding-right: 47px;
+    padding-top: 5px;
+    font-size: 20px;
+    overflow: hidden;
+    border-top: 2px solid rgb(67,52,55);
+    border-left:  1px solid rgb(67,52,55);
+    border-right: 1px solid rgb(67,52,55);
+    font-weight: normal;
+}
+
+
+/* Result */
+
+.result{
+    width: 100%;
+    padding: 20px 45px 45px 45px;
+    text-align: end;
+    color: white;
+    font-size: larger;
+    background-color: rgb(67,52,55);
+    overflow: hidden;
+    cursor: unset;
+}
+
+/* Clear  */
+
+.clear {
+    padding: 15px;
+    font-size: 23px;
+}
+
+/* Dark Mode */
+
+.dark-m
+ {
+    font-size: 15px;
+    background-color: whitesmoke;
+}
+
+.dark-m:hover {
+    background: black;
+    color: #03e9f4;
+}
+
+
+/* Footer */
+
+footer {
+	text-align: center;
+	font-size: 15px;
+}
+
+/* Home Page Icon */
+
+.attribution {
+    font-size: 9px;
+    color: grey;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.home-page-div {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 16px;
+    right: 20px;
+    font-size: 40px;
+    color: #607D8B;
+}
+
+a img {
+	height: 100%;
+	width: 100%;
+	display: block;
+}

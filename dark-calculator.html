@@ -1,0 +1,61 @@
+<!DOCTYPE html>    
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <meta name="description" content="Dark Calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="dark-calculator.css">
+        <script defer src="calculator.js"></script>
+    </head>
+	<body>
+		<div id="page">
+			<header></header>
+			<main>
+                <table class="calculator-wrapper">
+                    <tr>
+                        <th colspan="4" id="scree" class="temporary-result">0</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4" id="number-result"class="result">0</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3" id="clear-button" class="number clear">clear</td>
+                        <td id="divide-operator" class="operator divide">/</td>
+                    </tr>
+                    <tr>
+                        <td id="number-seven" class="number">7</td>
+                        <td id="number-eight" class="number">8</td>
+                        <td id="number-nine" class="number">9</td>
+                        <td id="multiple-operator" class="operator">*</td>
+                    </tr>
+                    <tr>
+                        <td id="number-four" class="number">4</td>
+                        <td id="number-five" class="number">5</td>
+                        <td id="number-six" class="number">6</td>
+                        <td id="minus-operator" class="operator">-</td>
+                    </tr>
+                    <tr>
+                        <td id="number-one" class="number">1</td>
+                        <td id="number-two" class="number">2</td>
+                        <td id="number-three" class="number">3</td>
+                        <td id="plus-operator" class="operator">+</td>
+                    </tr>
+                    <tr>
+                        <td id="number-zero" class="number">0</td>
+                        <td id="" class="number dark-m" onclick="changeMode()">light mode</td>
+                        <td id="equal-operator" class="operator equal" colspan="2">=</td>
+                    </tr>
+                </table>
+			</main> <!--end of content-->
+			<footer>
+				<!-- <p>	&#169;Marcell, 2020 </p>		 -->
+			</footer>
+        </div>
+        <script>	
+			function changeMode() {
+				location.replace("calculator.html");
+			}
+		</script>
+	</body>
+</html>
