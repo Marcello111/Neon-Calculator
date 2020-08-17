@@ -32,7 +32,7 @@
         scree.textContent = 0;  
     })
 
-    // Numbers //
+    // Add numbers to array and display on the screen //
     zero.addEventListener("click", function () { 
         calculation += 0;
         result.textContent = calculation;
@@ -83,7 +83,7 @@
         result.textContent = calculation;
     })
 
-    // Operators //
+    // Push the numbers to the array //
     plus.addEventListener("click", function () {
         temp.push(calculation);
         calculation = [];
@@ -108,7 +108,7 @@
         scree.textContent = +temp[0] + "/";
     })
 
-    // Equal //
+    // Do the calculation //
     equal.addEventListener("click", function () { 
 
         switch (scree.textContent) {
@@ -131,7 +131,7 @@
             default: return; 
         }
 
-        // Too big number, result
+        // Display the result //
         if (+finalResult > 999999999999) {
             alert("This calculator is able to calculate up to 12 digits. Please click on the clear button to start a new calculation.");
         } else {
