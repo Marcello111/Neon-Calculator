@@ -32,7 +32,7 @@
         scree.textContent = 0;  
     })
 
-    // Add numbers to array and display on the screen //
+    // Add numbers and display on the screen //
     zero.addEventListener("click", function () { 
         calculation += 0;
         result.textContent = calculation;
@@ -83,7 +83,7 @@
         result.textContent = calculation;
     })
 
-    // Push the numbers to the array //
+    // Push the numbers to the temp array //
     plus.addEventListener("click", function () {
         temp.push(calculation);
         calculation = [];
