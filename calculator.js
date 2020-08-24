@@ -1,5 +1,5 @@
 ((d) => { 
-
+    // DOM Elements
     let one = d.getElementById("number-one");
     let two = d.getElementById("number-two");
     let three = d.getElementById("number-three");
@@ -23,7 +23,7 @@
     let scree = d.getElementById("scree");
 
   
-    // Clear button //
+    // Clear button
     clear.addEventListener("click", function () { 
         calculation = [];
         finalResult = [];
@@ -32,7 +32,7 @@
         scree.textContent = 0;  
     })
 
-    // Add numbers and display on the screen //
+    // Add numbers and display on the screen
     zero.addEventListener("click", function () { 
         calculation += 0;
         result.textContent = calculation;
@@ -83,7 +83,7 @@
         result.textContent = calculation;
     })
 
-    // Push the numbers to the temp array //
+    // Push the numbers to the temp array
     plus.addEventListener("click", function () {
         temp.push(calculation);
         calculation = [];
@@ -108,7 +108,7 @@
         scree.textContent = +temp[0] + "/";
     })
 
-    // Do the calculation //
+    // Do the calculation
     equal.addEventListener("click", function () { 
 
         switch (scree.textContent) {
